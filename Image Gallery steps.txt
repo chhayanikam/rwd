@@ -1,0 +1,64 @@
+Activity 7.2: 
+
+ Working with Image Gallary.
+Galleria is a JavaScript image gallery framework. The aim is to simplify the process of creating professional image galleries for the web and mobile devices.
+
+1. download gallaria plugin 
+https://www.nuget.org/packages/Galleria.js/1.2.8
+or 
+  I will provide this in the Activity folder.
+
+2. create a folder called as ImageGallery in the main project folder
+showOnWheels
+3. Inside the ImageGallery folder crete two more folder
+   i. contentFile   
+   ii. JQuerys
+
+4. copy the galleria in ImageGallery and extract the folder.
+5. Copy all the Images for the gallery in contentFiles folder.
+6. copy the jquery1.8.2.min.js  JQuerys
+7. In the web page where Gallery to be display . Add the scripts at the top.
+<head>
+<SCRIPT src=" ImageGallery/jQuerys/jquery-1.8.3.js "></SCRIPT>
+<SCRIPT src="ImageGallery/galleria-1.2.8/galleria/galleria-1.2.8.js"></SCRIPT>
+</head>
+8. Add one Div tag to the page with Id . Here in the below code id is mygallery.
+   <DIV id="mygallery">
+<IMG src="ImageGallery/contentFiles/movieimage1_bee.jpg">
+<IMG src="ImageGallery/contentFiles/movieimage1_bee1.jpg">              
+<IMG src="ImageGallery/contentFiles/movieimage2_alvin.jpg">
+<IMG src="ImageGallery/contentFiles/movieimage2_alvin1.jpg">  
+<IMG src="ImageGallery/contentFiles/movieimage3_amy.jpg">
+<IMG src="ImageGallery/contentFiles/movieimage4_bolt.jpg">
+<IMG src="ImageGallery/contentFiles/movieimage4_bolt1.jpg">
+<IMG src="ImageGallery/contentFiles/movieimage5_wolf.jpg">
+</DIV>
+
+9. Add one more script tag on the web page . Which applies the Gallery effect.
+
+
+<SCRIPT>    
+   Galleria.loadTheme('ImageGallery/galleria-1.2.8/galleria/themes/classic/galleria.classic.min.js');
+// #gallery is the name of my div tag
+$("#mygallery").galleria({
+                width: 950,
+                height: 400
+                });
+</SCRIPT>
+
+
+
+10. save and run the web page.
+
+
+
+
+
+
+
+
+
+
+
+
+  
